@@ -1,16 +1,92 @@
-# React + Vite
+# ClosetAI 👗✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ClosetAI is a smart wardrobe management and outfit recommendation web application that helps users organize their clothing collection and generate personalized outfit suggestions based on occasion and weather conditions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 👕 Wardrobe Management
 
-## React Compiler
+* Add clothing items with images
+* Categorize clothes (Top, Shirt, Jeans, Leggings, Kurti, etc.)
+* Store clothing details including color and category
+* Delete unwanted clothing items
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🎯 Smart Outfit Generation
 
-## Expanding the ESLint configuration
+* Generate outfit combinations automatically
+* Occasion-based recommendations
+* Weather-based outfit suggestions
+* Outfit compatibility score percentage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ❤️ Favorites
+
+* Save favorite outfit combinations
+* View saved outfits anytime
+* Remove unwanted favorites
+
+### 👤 User Authentication
+
+* User Signup and Login
+* Profile Management
+* Edit personal information
+* Change password functionality
+
+### 📊 Profile Dashboard
+
+* View wardrobe statistics
+* Total clothes count
+* Category-wise clothing count
+* Favorite outfits count
+* Account settings and preferences
+
+## Technologies Used
+
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* React Router DOM
+* Local Storage
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/bnpranavika/ClosetAI.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd ClosetAI
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the application:
+
+```bash
+npm run dev
+```
+
+## Future Enhancements
+
+* AI-powered outfit recommendations
+* Real-time weather integration
+* Cloud database support
+* User profile pictures
+* Fashion trend analysis
+* Mobile application support
+
+## Author
+
+Developed by Pranavika
+
+## License
+
+This project is developed for educational and portfolio purposes.
