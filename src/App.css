@@ -1,0 +1,667 @@
+/* App.css */
+
+.page {
+  min-height: 100vh;
+  padding: 100px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Glass card UI */
+.card {
+  background: rgba(10, 10, 20, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 25px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* ✨ BUTTON SYSTEM */
+.btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+/* primary button */
+.btn-primary {
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
+}
+
+/* danger button */
+.btn-danger {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  color: white;
+}
+
+/* success button */
+.btn-success {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+/* Inputs + dropdowns */
+input, select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+select option {
+  color: black;
+}
+
+/* image cards */
+img {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+.page {
+  min-height: 100vh;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(0,0,0,0.6);
+  padding: 25px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 900px;
+  backdrop-filter: blur(10px);
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 12px;
+}
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+
+  backdrop-filter: blur(20px);
+  background: rgba(0,0,0,0.4);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-box {
+  text-decoration: none;
+  color: white;
+
+  padding: 12px 20px;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: all 0.3s ease;
+
+  font-weight: 500;
+
+  min-width: 120px;
+  text-align: center;
+
+  backdrop-filter: blur(10px);
+}
+
+.nav-box:hover {
+  transform: translateY(-4px);
+
+  background: rgba(255,255,255,0.15);
+
+  box-shadow:
+    0 0 20px rgba(255,105,180,0.4),
+    0 0 40px rgba(255,105,180,0.2);
+}
+
+.active-nav {
+  background: linear-gradient(
+    135deg,
+    #ff4da6,
+    #ff85c1
+  );
+
+  box-shadow:
+    0 0 20px rgba(255,105,180,0.8),
+    0 0 40px rgba(255,105,180,0.4);
+
+  border: none;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .nav-box {
+    min-width: 100px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+.add-clothes-card {
+  width: 500px;
+  max-width: 95%;
+  margin: 50px auto;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.preview-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.preview-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 30px rgba(255,105,180,0.5);
+}
+
+.input-field,
+.select-field {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.save-btn {
+  width: 100%;
+  margin-top: 20px;
+}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* Images */
+.preview-image,
+.outfit-image,
+.clothes-image {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Grid Layouts */
+.clothes-grid,
+.outfit-grid,
+.favorites-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Buttons */
+.btn {
+  width: auto;
+  min-width: 160px;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Navbar Items */
+.nav-link {
+  white-space: nowrap;
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 768px) {
+  .page {
+    padding: 90px 15px 20px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* =========================
+   MOBILE PHONES
+========================= */
+
+@media (max-width: 480px) {
+  .page {
+    padding: 80px 10px 15px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    width: 90%;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .preview-image,
+  .outfit-image,
+  .clothes-image {
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   LARGE DESKTOPS
+========================= */
+
+@media (min-width: 1400px) {
+  .card {
+    max-width: 900px;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+}
+.navbar {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  width: 95%;
+  max-width: 1200px;
+
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  padding: 12px;
+}
+.favorite-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+}
+
+.outfit-image {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-danger {
+  margin-top: 15px;
+  background: linear-gradient(
+    135deg,
+    #ff416c,
+    #ff4b2b
+  );
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  transform: translateY(-3px);
+}
+.clothes-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.clothing-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.15);
+
+  transition: all 0.3s ease;
+}
+
+.clothing-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 20px rgba(255,255,255,0.15);
+}
+
+.clothes-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-danger {
+  margin-top: 12px;
+  background: linear-gradient(
+    135deg,
+    #ff416c,
+    #ff4b2b
+  );
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 15px rgba(255,75,43,0.6);
+}
+/* PROFILE PAGE */
+
+.profile-card {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 25px;
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 0 40px rgba(255,255,255,0.15);
+  animation: fadeIn 0.8s ease;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #ff4d94,
+    #8f44fd
+  );
+
+  box-shadow: 0 0 30px #ff4d94;
+}
+
+.profile-header h1 {
+  margin-top: 20px;
+  font-size: 2.2rem;
+}
+
+.profile-header p {
+  opacity: 0.8;
+}
+
+.profile-info {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+}
+
+.info-box {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #ff4d94;
+}
+
+.info-box h3 {
+  margin-bottom: 10px;
+  color: #ff80bf;
+}
+
+.info-box p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.settings-section {
+  margin-top: 40px;
+}
+
+.settings-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 20px;
+  margin-bottom: 15px;
+
+  border-radius: 15px;
+  background: rgba(255,255,255,0.08);
+
+  transition: 0.3s;
+}
+
+.setting-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px #ff4d94;
+}
+
+.setting-item span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.setting-item input {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+.profile-actions {
+  margin-top: 35px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-secondary {
+  background: linear-gradient(
+    135deg,
+    #7c4dff,
+    #5e35b1
+  );
+}
+
+.btn-secondary:hover {
+  transform: translateY(-5px);
+}
+.edit-profile-card {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-profile-card h2 {
+  text-align: center;
+  color: #ff80bf;
+}
+
+.edit-profile-card textarea {
+  resize: none;
+}
+
+.user-bio {
+  margin-top: 10px;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.btn-success {
+  background: linear-gradient(
+    135deg,
+    #00c853,
+    #00e676
+  );
+}
+
+.btn-success:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00e676;
+}
